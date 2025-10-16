@@ -9,6 +9,7 @@ requests
 httpx
 youtube-transcript-api
 python-docx
+python-dotenv
 python-pptx
 openpyxl
 matplotlib
@@ -17,3 +18,4 @@ Flask
 pynacl
 pydub
 beautifulsoup4
+
