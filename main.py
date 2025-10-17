@@ -2281,7 +2281,7 @@ music_model_choices = [
 @app_commands.describe(prompt="The prompt for generating the music", model="Choose a model for generating the music (optional)")
 @app_commands.choices(model=music_model_choices)
 async def generate_music(interaction: discord.Interaction, prompt: str, model: str = "facebook/musicgen-small"):
-    if HUGGING_FACE_API == "YOUR_HUGGING_FACE_API_KEY":
+    if HUGGING_FACE_API == "HUGGING_FACE_API_KEY":
         await interaction.followup.send("Sorry, You have entered an Invalid Hugging Face API Key!") 
         return
 
@@ -2645,3 +2645,4 @@ async def aitoggle(interaction: discord.Interaction, toggle: int):
             add_to_history("System", f"Automatic AI responses were already disabled for {interaction.channel.name}.")
 
 bot.run(TOKEN)
+
